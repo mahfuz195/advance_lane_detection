@@ -21,7 +21,7 @@ The goals / steps of this project are the following:
 [image1]: ./CarND-Advanced-Lane-Lines/camera_calibration.png "Undistorted"
 [image2]: ./CarND-Advanced-Lane-Lines/examples/original_image.png "Road Transformed"
 [image3]: ./CarND-Advanced-Lane-Lines/examples/undistorted_image.png "Road Transformed"
-[image4]: ./examples/warped_straight_lines.jpg "Warp Example"
+[image4]: ./CarND-Advanced-Lane-Lines/examples/binary_image.png "Binary Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
@@ -62,7 +62,7 @@ To demonstrate this step, I will describe how I apply the distortion correction 
 
 I used a combination of color and gradient thresholds to generate a binary image (thresholding steps at lines # through # in `another_file.py`).  Here's an example of my output for this step.  (note: this is not actually from one of the test images)
 
-![alt text][image3]
+![alt text][image4]
 
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
