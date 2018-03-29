@@ -19,8 +19,8 @@ The goals / steps of this project are the following:
 [//]: # (Image References)
 
 [image1]: ./CarND-Advanced-Lane-Lines/camera_calibration.png "Undistorted"
-[image2]: ./test_images/test1.jpg "Road Transformed"
-[image3]: ./examples/binary_combo_example.jpg "Binary Example"
+[image2]: ./CarND-Advanced-Lane-Lines/original_image.jpg "Road Transformed"
+[image3]: ./CarND-Advanced-Lane-Lines/undistorted_image.jpg "Road Transformed"
 [image4]: ./examples/warped_straight_lines.jpg "Warp Example"
 [image5]: ./examples/color_fit_lines.jpg "Fit Visual"
 [image6]: ./examples/example_output.jpg "Output"
@@ -56,6 +56,7 @@ I then used the output `objpoints` and `imgpoints` to compute the camera calibra
 
 To demonstrate this step, I will describe how I apply the distortion correction to one of the test images like this one:
 ![alt text][image2]
+![alt text][image3]
 
 #### 2. Describe how (and identify where in your code) you used color transforms, gradients or other methods to create a thresholded binary image.  Provide an example of a binary image result.
 
