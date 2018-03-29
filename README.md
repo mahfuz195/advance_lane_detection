@@ -1,7 +1,6 @@
-## Writeup Template
+## Advance Lane Detection
 
-### You can use this file as a template for your writeup if you want to submit it as a markdown file, but feel free to use some other method and submit a pdf if you prefer.
-
+### The goal of the project is to write a software pipeline to identify the lane boundaries in a video, measure the radius of the road, and measure the offset of the car position from the center position of a lane.
 ---
 
 **Advanced Lane Finding Project**
