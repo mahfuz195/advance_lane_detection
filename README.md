@@ -133,7 +133,9 @@ right_fitx = (sum(right_history)/len(right_history))
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [https://youtu.be/d6aDJDtzmsg](./project_video.mp4)
+Here's the youtube link of the video:
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/d6aDJDtzmsg/0.jpg)](https://www.youtube.com/watch?v=d6aDJDtzmsg "Advacne Lane Detection output")
+
 
 ---
 
