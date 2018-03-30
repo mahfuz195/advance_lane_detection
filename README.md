@@ -144,4 +144,10 @@ Here's the youtube link of the video:
 
 #### 1. Briefly discuss any problems / issues you faced in your implementation of this project.  Where will your pipeline likely fail?  What could you do to make it more robust?
 
-Here I'll talk about the approach I took, what techniques I used, what worked and why, where the pipeline might fail and how I might improve it if I were going to pursue this project further.  
+I did face problem with the images where the car was on the bridge. and while trasitioning place where car is going from bridge to normal road. Here are the techniques I have used to reduce these error:
+1. I have lowered the threashhold of S channel.
+2. Then used an moving average method using the `deque`
+3. Put a sanity check to remove uncessary outliers.
+
+That gave me a reasonable output. But I think, using more fine tuning of the threasholds and some better filtering will produce more accurate output. 
+
