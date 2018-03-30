@@ -97,7 +97,17 @@ Then I did some other stuff and fit my lane lines with a 2nd order polynomial ki
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
-I did this in lines # through # in my code in `my_other_file.py`
+Using `measure_radius_of_curvature` I implemented the calculation of measuring the radis. Here is the funciton that I have used:
+```
+def measure_radius_of_curvature(x_values):
+    ym_per_pix = 30/720 
+    xm_per_pix = 3.7/700 
+    y_points = np.linspace(0, num_rows-1, num_rows)
+    y_eval = np.max(y_points)
+    fit_cr = np.polyfit(y_points*ym_per_pix, x_values*xm_per_pix, 2)
+    curverad = ((1 + (2*fit_cr[0]*y_eval*ym_per_pix + fit_cr[1])**2)**1.5) / np.absolute(2*fit_cr[0])
+    return curverad
+```
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
