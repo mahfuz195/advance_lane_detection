@@ -93,7 +93,7 @@ I did a histogram analysis of the binary image and took the maximum picks on the
 
 ![alt text][image6]
 
-Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
+Then I did a sliding window search with a window size of 9 and fit my lane lines with a 2nd order polynomial. Which produced the following output:
 
 ![alt text][image7]
 
@@ -115,12 +115,11 @@ def measure_radius_of_curvature(x_values):
 
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
-I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+I implemented putting all the pieces together and produced the anotated image as below:
 
 ![alt text][image8]
 
 
-![alt text][image9]
 
 ---
 
