@@ -119,6 +119,12 @@ I implemented putting all the pieces together and produced the anotated image as
 
 ![alt text][image8]
 
+While producing the video. I made use of `deque` python collection to keep track of the history of the last 10 frames. which eliminates few errors while predicting the left and right lines:
+
+```
+left_fitx = (sum(left_history)/len(left_history))
+right_fitx = (sum(right_history)/len(right_history))
+```
 
 
 ---
@@ -127,7 +133,7 @@ I implemented putting all the pieces together and produced the anotated image as
 
 #### 1. Provide a link to your final video output.  Your pipeline should perform reasonably well on the entire project video (wobbly lines are ok but no catastrophic failures that would cause the car to drive off the road!).
 
-Here's a [link to my video result](./project_video.mp4)
+Here's a [https://youtu.be/d6aDJDtzmsg](./project_video.mp4)
 
 ---
 
