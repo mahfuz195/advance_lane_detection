@@ -23,8 +23,9 @@ The goals / steps of this project are the following:
 [image3]: ./CarND-Advanced-Lane-Lines/examples/undistorted_image.png "Road Transformed"
 [image4]: ./CarND-Advanced-Lane-Lines/examples/binary_image.png "Binary Example"
 [image5]: ./CarND-Advanced-Lane-Lines/examples/warped_image.png "Warped Image"
-[image6]: ./examples/example_output.jpg "Output"
-[video1]: ./project_video.mp4 "Video"
+[image6]: ./CarND-Advanced-Lane-Lines/examples/histogram.png "Histogram Image"
+[image7]: ./CarND-Advanced-Lane-Lines/examples/poly.png "Ploy Image"
+[image8]: ./CarND-Advanced-Lane-Lines/examples/anotated.png "Anotated Image"
 
 ## [Rubric](https://review.udacity.com/#!/rubrics/571/view) Points
 
@@ -91,7 +92,8 @@ I verified that my perspective transform was working as expected by drawing the 
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
 
-![alt text][image5]
+![alt text][image7]
+![alt text][image8]
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -101,7 +103,7 @@ I did this in lines # through # in my code in `my_other_file.py`
 
 I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
 
-![alt text][image6]
+![alt text][image9]
 
 ---
 
