@@ -22,7 +22,7 @@ The goals / steps of this project are the following:
 [image2]: ./CarND-Advanced-Lane-Lines/examples/original_image.png "Road Transformed"
 [image3]: ./CarND-Advanced-Lane-Lines/examples/undistorted_image.png "Road Transformed"
 [image4]: ./CarND-Advanced-Lane-Lines/examples/binary_image.png "Binary Example"
-[image5]: ./CarND-Advanced-Lane-Lines/examples/warped_image.png "Binary Image"
+[image5]: ./CarND-Advanced-Lane-Lines/examples/warped_image.png "Warped Image"
 [image6]: ./examples/example_output.jpg "Output"
 [video1]: ./project_video.mp4 "Video"
 
