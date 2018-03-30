@@ -89,11 +89,15 @@ I verified that my perspective transform was working as expected by drawing the 
 ![alt text][image5]
 
 #### 4. Describe how (and identify where in your code) you identified lane-line pixels and fit their positions with a polynomial?
+I did a histogram analysis of the binary image and took the maximum picks on the right side and left side to detect the staring points of the left and right lanes respectively. 
+
+![alt text][image6]
 
 Then I did some other stuff and fit my lane lines with a 2nd order polynomial kinda like this:
 
 ![alt text][image7]
-![alt text][image8]
+
+
 
 #### 5. Describe how (and identify where in your code) you calculated the radius of curvature of the lane and the position of the vehicle with respect to center.
 
@@ -112,6 +116,9 @@ def measure_radius_of_curvature(x_values):
 #### 6. Provide an example image of your result plotted back down onto the road such that the lane area is identified clearly.
 
 I implemented this step in lines # through # in my code in `yet_another_file.py` in the function `map_lane()`.  Here is an example of my result on a test image:
+
+![alt text][image8]
+
 
 ![alt text][image9]
 
