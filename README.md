@@ -68,14 +68,14 @@ I used a combination of color, magniture and gradient thresholds to generate a b
 #### 3. Describe how (and identify where in your code) you performed a perspective transform and provide an example of a transformed image.
 
 I used the following lines of code to perform a prespective transform using following source and destination points:
-
-| Source        | Destination   | 
-|:-------------:|:-------------:| 
-| 220, 720      | 320, 720      | 
-| 1200, 720     | 920, 720      |
-| 570, 470      | 320, 1        |
-| 780, 470      | 920, 1        |
-
+```
+source = np.float32([[(w/2-470),h-30],
+                     [(w/2+470),h-30],
+                     [(w/2+90),470],
+                     [(w/2-90),470]])
+dst = np.float32([[0,720],[1200,720],[1200,0],[0,0]])
+```
+and then I did the prespective transformation of the binary image using following lines of code:
 ```
 dst = np.float32([bottom_left,bottom_right,top_right,top_left])
 M = cv2.getPerspectiveTransform(source, dst)
@@ -125,7 +125,20 @@ While producing the video. I made use of `deque` python collection to keep track
 left_fitx = (sum(left_history)/len(left_history))
 right_fitx = (sum(right_history)/len(right_history))
 ```
+I also implemted the sanity checking and if the sanity checking returns false, then I took the output of the last frame to annotated the image:
 
+```
+checked = sanity_check(binary_warped,left_fit,right_fit)
+
+if(checked==False):
+    if(len(left_fit)>0):
+        left_fit = prev_left_fit[-1]
+    if(len(right_fit)>0):
+        right_fit = prev_right_fit[-1]
+else : 
+    prev_left_fit.append(left_fit)
+    prev_right_fit.append(right_fit)
+```
 
 ---
 
