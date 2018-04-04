@@ -148,7 +148,7 @@ else :
 
 Here's the youtube link of the video:
 
-[![IMAGE ALT TEXT](http://img.youtube.com/vi/d6aDJDtzmsg/0.jpg)](https://www.youtube.com/watch?v=d6aDJDtzmsg "Advacne Lane Detection output")
+[![IMAGE ALT TEXT](http://img.youtube.com/vi/7ODhKVTK8qc/0.jpg)](https://www.youtube.com/watch?v=7ODhKVTK8qc "Advacne Lane Detection output")
 
 
 ---
