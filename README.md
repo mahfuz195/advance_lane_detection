@@ -141,6 +141,23 @@ else :
 ```
 
 ---
+Also , I have implemented a low pass filter for radius sanity checking as follows:
+```
+curve_history = deque(maxlen=5)
+def curvature_sanity_check(curvature, threashold=10000):
+    global curve_history
+    if(len(curve_history)>0):
+        avg = sum(curve_history)/len(curve_history)
+        if (curvature>threashold):
+            return avg
+        elif(abs(avg-curvature)> (threashold-5000)): #5000 from US radius curve
+            return avg
+        else :
+            curve_history.append(curvature)
+            return sum(curve_history)/len(curve_history)
+    else : 
+        curve_history.append(curvature)
+```
 
 ### Pipeline (video)
 
